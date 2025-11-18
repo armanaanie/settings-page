@@ -7,9 +7,20 @@
     <title>settings</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class=" ml-4 bg-[#10B981]">
+<body class="bg-emerald-50 text-emerald-900">
+    <nav class="flex justify-between items-center p-4">
+        <div class="text-4xl md:text-5xl lg:text-6xl font-bold">
+            Link-Up
+        </div>
+        <div class="text-4xl md:text-5xl lg:text-6xl font-bold hidden md:block lg:block">Home</div>
+        <button class="bg-emerald-500 text-white px-4 md:px-6 lg:px-8 py-2 md:py-4 lg:py-6 rounded-lg">Login</button>
+
+    </nav>
 
 
     <div class="min-h-screen bg-bgc text-textc p-4 md:p-8">
@@ -23,23 +34,9 @@
 
             <!-- Profile Section -->
             <section class="bg-[#ECFDF5] rounded-xl p-6 space-y-4  ">
-                <h2 class="text-xl text-center font-semibold text-[#10B981]">Profile</h2>
-
-                <div class="flex flex-col items-center space-y-2">
-                    <img src="https://via.placeholder.com/80"
-                        class="w-20 h-20 rounded-full border-4 border-[#6EE7B7] block m-auto " /><button
-                        class="w-auto p-2 bg-[#6EE7B7] text-[#10B981] rounded-lg border-[#10B981] m-1">Change
-                        avatar</button>
-                    <input type="text"
-                        class="w-1/2 p-2 bg-[#ECFDF5] text-[#10B981] rounded-lg border-none m-1 text-center justify-center"
-                        placeholder="Your Name" />
-
-                    <input type="text"
-                        class="w-1/2 p-2 bg-[#ECFDF5] text-[#10B981] rounded-lg border-none m-1 text-center justify-center"
-                        placeholder="Your Email" /> <input type="text"
-                        class="w-1/2 p-2 bg-[#ECFDF5] text-[#10B981] rounded-lg border-none m-1 text-center justify-center"
-                        placeholder="Available, Busy, etc." />
-                </div>
+                <button
+                        class="w-full p-2 bg-[#6EE7B7] text-[#10B981] rounded-lg border-[#10B981] m-1"><h2 class="text-xl  font-semibold text-[#10B981]">Profile</h2></button>
+                   
             </section>
 
             <!-- Preferences -->
@@ -50,35 +47,81 @@
                 <div class="flex items-center justify-between">
                     <span class="text-[#10B981]">Dark Mode</span>
                     <label class="inline-flex items-center cursor-pointer">
-                        <input type="checkbox" checked="checked" class="toggle bg-[#10B981]" />
-
+                        <input type="checkbox" checked="checked" class="toggle bg-[#10B981]" /> 
+                    </label>
                 </div>
-                </label>
-      
 
-        <!-- Notifications -->
-        <div class="flex items-center justify-between">
-            <span class="text-[#10B981]">Enable Notifications</span>
-            <input type="checkbox" class="h-5 w-5 rounded  focus:ring-[#064E3B]" />
+
+
+                <!-- Notifications -->
+                <div class="flex items-center justify-between">
+                    <span class="text-[#10B981]">Enable Notifications</span>
+                    <input type="checkbox" class="h-5 w-5 rounded  focus:ring-[#064E3B]" />
+                </div>
+            </section>
+
+            <!-- Account -->
+            <section class="bg-[#ECFDF5] rounded-xl p-6 space-y-4">
+                <h2 class="text-xl  font-semibold text-[#10B981]">Account</h2>
+
+                <button class="w-full py-2 bg-[#6EE7B7]  text-[#10B981] rounded-lg border-[#10B981]">
+                    Change Password
+                </button>
+
+                <button class="w-full py-2 bg-[#6EE7B7] text-[#10B981] rounded-lg border-[#10B981]">
+                    Manage Connected Devices
+                </button>
+
+                <button class="w-full py-2 bg-[#6EE7B7] text-[#10B981] rounded-lg border-[#10B981]">
+                    Log Out
+                </button>
+            </section>
         </div>
-        </section>
+        <footer>
+            <div
+                class="container mx-auto text-center sm:text left bg-emerald-700 text-white rounded-bl-2xl rounded-br-2xl p-6">
+                <div class="sm:flex justify-around text-white ">
+                    <div class="">
+                        <h1 class="text-2xl sm:columns-4xl mb-5">Link-Up</h1>
+                        <p class="mb-5">Lorem ipsum dolor sit <br> amet consectetur adipisicing. <br> Explicabo
+                            cupiditate laboriosam <br> ipsam officiis quasi dignissimos <br> doloribus nemo impedit</p>
+                        <div>
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-solid fa-handshake"></i></a>
+                        </div>
 
-        <!-- Account -->
-        <section class="bg-[#ECFDF5] rounded-xl p-6 space-y-4">
-            <h2 class="text-xl  font-semibold text-[#10B981]">Account</h2>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl sm:columns-4xl mb-5">Quick Links</h1>
+                        <ul class="leading-10">
+                            <li>Home</li>
+                            <li>Features</li>
+                            <li>Privacy Policy</li>
+                            <li>Terms & Conditions</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl sm:columns-4xl mb-5">Support</h1>
+                        <ul class="leading-10">
+                            <li>Help Center</li>
+                            <li>Contact Us</li>
+                            <li>FAQS</li>
 
-            <button class="w-full py-2 bg-[#6EE7B7]  text-[#10B981] rounded-lg border-[#10B981]">
-                Change Password
-            </button>
+                        </ul>
+                    </div>
+                </div>
 
-            <button class="w-full py-2 bg-[#6EE7B7] text-[#10B981] rounded-lg border-[#10B981]">
-                Manage Connected Devices
-            </button>
+                <hr class="my-16">
+                <div class="mb-20">
+                    <p>&copy; Copyright 2025. All Righr Reserved</p>
+                </div>
 
-            <button class="w-full py-2 bg-[#6EE7B7] text-[#10B981] rounded-lg border-[#10B981]">
-                Log Out
-            </button>
-        </section>  </div>
 
+            </div>
+
+
+        </footer>
     </div>
-    </di
+</body>
